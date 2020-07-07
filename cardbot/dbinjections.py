@@ -72,8 +72,7 @@ def pullCardRecord(recordName):
 										database = db_credentials[4])
 		print("connected")
 		cursor = connection.cursor()
-		# Print PostgreSQL Connection properties
-		print(connection.get_dsn_parameters(),"\n")
+
 		join_table_query = '''
 		SELECT id
 		FROM card
